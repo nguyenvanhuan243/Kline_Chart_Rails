@@ -1,0 +1,17 @@
+<%= form_for(kline_chart) do |f| %>
+  <% if kline_chart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kline_chart.errors.count, "error") %> prohibited this kline_chart from being saved:</h2>
+
+      <ul>
+      <% kline_chart.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
