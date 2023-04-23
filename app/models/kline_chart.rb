@@ -1,0 +1,2 @@
+class KlineChart < ApplicationRecord
+end
